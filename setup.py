@@ -18,7 +18,7 @@ setup(
     author="Todd Schavey",
     author_email="schaveyt@gmail.com",
     license="MIT",
-    python_requires=">=3.11",
+    python_requires=">=3.9",
     install_requires=requirements_txt,
     packages=find_namespace_packages(where="src"),
     package_dir={"": "src"},
