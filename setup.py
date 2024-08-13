@@ -24,7 +24,6 @@ setup(
     package_dir={"": "src"},
     package_data={
         "jinjax-flowbite.components": ["*.jinja"],
-        "jinjax-flowbite.components.Forms": ["*.jinja"],
         "jinjax-flowbite.components.Icons": ["*.jinja"]
     },
     classifiers=[],
