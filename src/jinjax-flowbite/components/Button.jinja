@@ -38,8 +38,8 @@
 
     <div class="group">
 
-        {% if tooltip is not none %}
-            <Flowbite.Tooltip text={{tooltip}} />
+        {% if tooltip %}
+            <Flowbite.Tooltip id={{id ~ '-tooltip'}} text={{tooltip}} />
         {% endif %}
 
 
