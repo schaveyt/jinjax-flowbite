@@ -24,7 +24,7 @@
 
     <button id="{{id}}" type="{{type}}" class="{{ _primary_css_classes }} {{ padding }} {{ spacing }} {{ classes }}" disabled="true"  {{ attrs.render() }} >
         {% set spinner_text = "Loading..." if text == "" else text %}
-        {{ Spinner.render(text=spinner_text) }}
+        <Flowbite.Spinner text={{spinner_text}} />
     </button>
 
 {% else %}
@@ -39,7 +39,7 @@
     <div class="group">
 
         {% if tooltip is not none %}
-            {{ Tooltip.render(text=tooltip) }}
+            <Flowbite.Tooltip text={{tooltip}} />
         {% endif %}
 
 

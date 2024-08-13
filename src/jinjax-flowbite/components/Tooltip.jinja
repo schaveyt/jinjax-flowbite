@@ -1,10 +1,10 @@
-{% macro render(id="", text="", class="") %}
+{#def id="", text="", classes="" #}
     
-    <div id="{{id}}" class="absolute -translate-y-7 hidden group-hover:block w-auto z-50 {{ class }}">
-        <div class="bottom-full right-0 rounded bg-black px-4 py-1 text-xs text-white whitespace-nowrap">
-            {{ text }}
-        </div>
+<div id={{id}} class="absolute -translate-y-7 hidden group-hover:block w-auto z-50 {{ classes }}">
+    <div class="bottom-full right-0 rounded bg-black px-4 py-1 text-xs text-white whitespace-nowrap">
+        {{ text }}
     </div>
+</div>
 
-{% endmacro %}
+
 

@@ -1,0 +1,25 @@
+
+{#def 
+    id,
+    title,
+    subtitle,
+    header_bg_classes,
+    title_text_size_class,
+    subtitle_text_size_class,
+    show_header_subtitle,
+    show_header_controls,
+#}
+
+<div id="card-header-{{ id }}" role="card-header-container" class="flex flex-col xl:flex-row px-4 py-2 justify-between rounded-t-lg {{ header_bg_classes }}">
+    <div class="g:mb-0">
+        <h3 class="font-bold text-gray-900 dark:text-white {{ title_text_size_class }}">{{ title }}</h3>
+        {% if show_header_subtitle %}
+            <span class="font-normal text-gray-500 dark:text-gray-400 {{ subtitle_text_size_class }}">{{ subtitle }}</span>
+        {% endif %}
+    </div>
+    {% if show_header_controls %}
+        <div role="card-header-control-container" class="">
+            {{ content }}
+        </div>
+    {% endif %}
+</div>
